@@ -1,0 +1,10 @@
+.image{
+    display: block;
+    border-radius: 10px 10px 10px 10px;
+    &-bl{
+        border-radius: 10px 10px 10px 300px;
+    }
+    &-br{
+        border-radius: 10px 10px 200px 10px;
+    }
+}

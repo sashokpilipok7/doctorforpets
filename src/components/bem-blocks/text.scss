@@ -1,0 +1,22 @@
+.text{
+    font-size: 16px;
+    line-height: 21px;
+    color: #F8F8F8;
+    &-s{
+        font-size: 14px;
+        line-height: 19px;
+        color: #BCCED0;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 19px;
+        &-s{
+            font-size: 12px;
+            line-height: 16px;
+        }
+      }
+    
+      @media screen and (min-width: 1440px) {
+      }
+}
