@@ -1,25 +1,56 @@
 .button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 22px 28px;
-  gap: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 22px 28px;
+	gap: 10px;
+	height: 56px;
 
-  height: 56px;
+	background: rgba(209, 253, 255, 0.3);
+	border: 2px solid #d1fdff;
+	border-radius: 7px;
 
-  background: rgba(209, 253, 255, 0.3);
-  border: 2px solid #d1fdff;
-  border-radius: 7px;
+	font-family: "gothampro";
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
 
-  font-family: "gothampro";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
+	color: #d1fdff;
 
-  /* светлый голубой */
+	&__category {
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		justify-content: center;
+		padding: 12px 66px;
+		border: 1px solid #3d4c87;
+		color: #f8f8f8;
+		background: #3d4c87;
+		border-radius: 10px;
+		transition: 0.3 all ease-in;
 
-  color: #d1fdff;
+		&-active {
+			border: 1px solid #d1fdff;
+			color: #d1fdff;
+			& path {
+				fill: #d1fdff;
+			}
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		&__category {
+			padding: 18px 66px;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		&__category {
+			padding: 18px 75px;
+		}
+	}
 }
