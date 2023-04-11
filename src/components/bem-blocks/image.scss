@@ -1,10 +1,30 @@
-.image{
-    display: block;
-    border-radius: 10px 10px 10px 10px;
-    &-bl{
-        border-radius: 10px 10px 10px 300px;
+.image {
+  display: block;
+  border-radius: 10px 10px 10px 10px;
+  max-width: 100%;
+  width: 100%;
+  &-bl {
+    border-radius: 10px 10px 10px 100px;
+  }
+  &-br {
+    border-radius: 10px 10px 70px 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &-bl {
+      border-radius: 10px 10px 10px 170px;
     }
-    &-br{
-        border-radius: 10px 10px 200px 10px;
+    &-br {
+      border-radius: 10px 10px 70px 10px;
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &-bl {
+      border-radius: 10px 10px 10px 300px;
+    }
+    &-br {
+      border-radius: 10px 10px 200px 10px;
+    }
+  }
 }
