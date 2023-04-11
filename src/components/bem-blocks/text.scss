@@ -1,31 +1,41 @@
-.text{
-    font-size: 16px;
-    line-height: 21px;
-    color: #F8F8F8;
-    &-s{
-        font-size: 14px;
-        line-height: 19px;
-        color: #BCCED0;
-    }
-    &-xs{
-        font-size: 12px;
-    }
+.text {
+	font-size: 16px;
+	line-height: 21px;
+	color: #f8f8f8;
+	&-s {
+		font-size: 14px;
+		line-height: 19px;
+		color: #bcced0;
+	}
+	&-xs {
+		font-size: 12px;
+	}
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 19px;
-        &-s{
-            font-size: 12px;
-            line-height: 16px;
-        }
-        &-xs{
-            font-size: 14px;
-        }
-      }
-    
-      @media screen and (min-width: 1440px) {
-        &-xs{
-            font-size: 16px;
-        }
-      }
+	&-big {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 15px;
+		text-transform: uppercase;
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 14px;
+		line-height: 19px;
+		&-s {
+			font-size: 12px;
+			line-height: 16px;
+		}
+		&-xs {
+			font-size: 14px;
+		}
+		&-big {
+			font-size: 16px;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		&-xs {
+			font-size: 16px;
+		}
+	}
 }
