@@ -1,0 +1,35 @@
+[33mcommit 1d9beb1c95efe6c08748ef0755286a888051f97a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mabout[m[33m)[m
+Author: Sasha Pylypenko <Sashapylypenko.pov@gmail.com>
+Date:   Tue Apr 11 13:07:09 2023 +0300
+
+    feat: about sceleton
+
+[33mcommit 9fdfe33dbc5fe314cf1ce2007f297277006a0f3c[m
+Author: Sasha Pylypenko <Sashapylypenko.pov@gmail.com>
+Date:   Tue Apr 11 12:42:28 2023 +0300
+
+    feat: main Section
+
+[33mcommit 115bc05f506a915942b90494c7c19c939927cdf3[m
+Author: Sasha Pylypenko <Sashapylypenko.pov@gmail.com>
+Date:   Tue Apr 11 11:16:49 2023 +0300
+
+    feat: main section
+
+[33mcommit b95e07657c9819f9792e6ea025d3bb7aa5bfeee1[m
+Author: Sasha Pylypenko <Sashapylypenko.pov@gmail.com>
+Date:   Mon Apr 10 16:22:55 2023 +0300
+
+    feat: main components
+
+[33mcommit 4905e49ffed2ce179b2d3088049021506b2fe9c1[m
+Author: Sasha Pylypenko <Sashapylypenko.pov@gmail.com>
+Date:   Mon Apr 10 13:51:21 2023 +0300
+
+    feat: add fonts to project
+
+[33mcommit 81ced44b12654761ac9df445c7f1affbe626f3c7[m
+Author: Sasha Pylypenko <Sashapylypenko.pov@gmail.com>
+Date:   Mon Apr 10 13:24:11 2023 +0300
+
+    feat: app init
