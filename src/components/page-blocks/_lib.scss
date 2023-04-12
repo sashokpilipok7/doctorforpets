@@ -1,0 +1,77 @@
+.library {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px 15px 70px 15px;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 30px;
+	}
+
+	& .title {
+		align-self: flex-start;
+		padding-left: 40px;
+		margin-bottom: 20px;
+		position: relative;
+		&::before {
+			position: absolute;
+			content: "";
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			border: 2px solid #64c1c6;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 13px 10px;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 30px;
+		overflow: hidden;
+		max-height: 770px;
+	}
+
+	@media screen and (min-width: 768px) {
+		&__buttons {
+			flex-direction: row;
+			gap: 20px;
+		}
+
+		&__wrapper {
+			max-height: 630px;
+		}
+
+		& .title {
+			&::before {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		&__wrapper {
+			max-height: none;
+		}
+
+		& .title {
+			padding-left: 80px;
+
+			&::before {
+				left: 40px;
+			}
+		}
+	}
+}
