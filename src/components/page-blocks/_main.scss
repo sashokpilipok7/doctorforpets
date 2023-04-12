@@ -1,5 +1,5 @@
 .mainSection {
-  padding: 0 15px;
+  padding: 30px 15px;
   //height: 100vh;
   &__container {
     position: relative;
@@ -44,7 +44,7 @@
       padding: 0 15px;
       left: 50%;
       margin-bottom: -15px;
-      background: rgb(70 85 141);
+      background: #283362;
     }
   }
   &__imgMobile{
@@ -58,6 +58,7 @@
     display: none;
 }
   @media screen and (min-width: 768px) {
+    padding: 35px 15px;
     &__container {
       display: flex;
       align-items: center;
@@ -111,6 +112,7 @@
   }
 
   @media screen and (min-width: 1440px) {
+    padding: 55px 15px;
     &__imgMobile{
         display: none;
     }
