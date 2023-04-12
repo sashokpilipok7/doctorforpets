@@ -28,7 +28,16 @@
 
 <body>
 	<main class="main">
-		
+		<header class="header">
+  <div class="container">
+    <img src="../../img/logo.png" alt="" class="logo" />
+  </div>
+  <!-- <p class="text text-s">Нажимая на кнопку вы соглашаетесь на обработку персональных данных</p>
+	<a href="#" class="link">White</a>
+	<a href="#" class="link link-dark">Dark</a>
+	<a href="#" class="link link-blue">Blue</a> -->
+</header>
+
 		<section class="library">
 	<div class="container library__container">
 		<h2 class="title title-m title-withDot">Библиотека</h2>
@@ -124,6 +133,39 @@
 		</div>
 		<button class="button">показать больше</button>
 	</div>
+</section>
+
+		<section class="feedbacksection">
+  <div class="container">
+    <h3 class="title title-withDot">Предварительная запись</h3>
+    <p class="text feedbacksection__text">
+      Оставьте свои данные и наш администратор свяжется с вами для уточнения
+      всех деталей записи в самое ближайшее время
+    </p>
+    <div class="feedbacksection__row">
+      <div class="feedbacksection__left">
+        <img src="../../img/feedback.jpg" alt="" class="image image-br" />
+      </div>
+      <div class="feedbacksection__right">
+        <form class="feedbacksection__form" action="#">
+          <input type="text" class="input" placeholder="Ваше имя" />
+          <input type="tel" class="input" placeholder="Телефон" />
+          <textarea
+            name="message"
+            id=""
+            cols="25"
+            rows="8"
+            class="input"
+            placeholder="Сообщение для администратора"
+          ></textarea>
+          <button class="button" type="submit">Записаться на приём</button>
+        </form>
+        <div class="text">
+          Нажимая на кнопку вы соглашаетесь на обработку персональных данных
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 	</main>

@@ -44,19 +44,19 @@
       padding: 0 15px;
       left: 50%;
       margin-bottom: -15px;
-      background: #283362;
+      background: #232e58;
     }
   }
-  &__imgMobile{
+  &__imgMobile {
     display: block;
     width: 100%;
-}
-&__imgTablet{
+  }
+  &__imgTablet {
     display: none;
-}
-&__img{
+  }
+  &__img {
     display: none;
-}
+  }
   @media screen and (min-width: 768px) {
     padding: 35px 15px;
     &__container {
@@ -72,10 +72,12 @@
       .textGroup {
         display: block;
       }
-      .text, .title, .button{
-        color: #D1FDFF;
+      .text,
+      .title,
+      .button {
+        color: #d1fdff;
         margin-bottom: 30px;
-        border-color:#D1FDFF ;
+        border-color: #d1fdff;
       }
       .textGroup {
         display: block;
@@ -85,42 +87,42 @@
         position: absolute;
         bottom: 10px;
         width: 47%;
-        .text{
-            display: block; 
-            width: 33%;
-            padding: 0 15px;
-            border-left: 1px solid #64C1C6;
-            color: #D1FDFF;
+        .text {
+          display: block;
+          width: 33%;
+          padding: 0 15px;
+          border-left: 1px solid #64c1c6;
+          color: #d1fdff;
         }
       }
     }
-    &__right{
-        height: initial;
+    &__right {
+      height: initial;
     }
     &__lineBlock {
       margin-bottom: 75px;
     }
-    &__imgMobile{
-        display: none;
+    &__imgMobile {
+      display: none;
     }
-    &__imgTablet{
-        display: block;
+    &__imgTablet {
+      display: block;
     }
-    &__img{
-        display: none;
+    &__img {
+      display: none;
     }
   }
 
   @media screen and (min-width: 1440px) {
     padding: 55px 15px;
-    &__imgMobile{
-        display: none;
+    &__imgMobile {
+      display: none;
     }
-    &__imgTablet{
-        display: none;
+    &__imgTablet {
+      display: none;
     }
-    &__img{
-        display: block;
+    &__img {
+      display: block;
     }
   }
 }
