@@ -16,18 +16,61 @@
 
   &__row {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 100%;
+    gap: 15px;
   }
   &__left,
   &__right {
     width: 100%;
   }
+  &__right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  &__item {
+    width: 100%;
+    padding: 15px;
+    background: rgba(89, 98, 129, 0.5);
+    border: 1px solid #f8f8f8;
+    border-radius: 10px;
+
+    font-size: 13px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__allButton {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  &__linkButton {
+    display: none;
+  }
+  .fullWidth {
+    margin-top: 40px;
+  }
   @media screen and (min-width: 768px) {
     padding: 35px 0;
     .text {
       max-width: 570px;
+    }
+    &__row {
+      gap: 20px;
+    }
+    &__item {
+      width: 32%;
+      font-size: 14px;
+    }
+    &__allButton {
+      display: none;
+    }
+    &__linkButton {
+      display: none;
     }
   }
   @media screen and (min-width: 1440px) {
@@ -46,6 +89,12 @@
     }
     &__right {
       width: 60%;
+    }
+    &__allButton {
+      display: none;
+    }
+    &__linkButton {
+      display: block;
     }
   }
 }
