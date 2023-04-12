@@ -31,6 +31,11 @@
       max-width: 290px;
     }
   }
+  &__form {
+    .button {
+      margin-bottom: 20px;
+    }
+  }
   @media screen and (min-width: 768px) {
     padding: 35px 0;
     &__text {
@@ -38,6 +43,15 @@
     }
     &__row {
       gap: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    &__left {
+      width: 50%;
+    }
+    &__right {
+      width: 50%;
     }
   }
   @media screen and (min-width: 1440px) {
