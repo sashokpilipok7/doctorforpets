@@ -1,0 +1,37 @@
+.footer {
+  background: #212c53;
+  padding: 50px 0;
+  color: #f8f8f8;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  &__col {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 35px 0;
+    &__row {
+      flex-direction: row;
+    }
+    &__col {
+      width: 25%;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__row {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    &__col {
+      width: 16.666%;
+      text-align: left;
+    }
+  }
+}
