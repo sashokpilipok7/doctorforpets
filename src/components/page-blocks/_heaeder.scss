@@ -1,0 +1,49 @@
+.header {
+  height: 90px;
+  padding: 15px 0;
+  &__logo {
+    border-radius: 50%;
+    margin-right: 10%;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__col {
+    display: flex;
+    align-items: center;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__input {
+    height: 40px;
+    width: 130px;
+    padding-left: 20px;
+    color: #f8f8f8;
+    background: rgba(209, 253, 255, 0.15);
+
+    border: 1px solid #d1fdff;
+    border-radius: 30px;
+  }
+  &__searchIcon {
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.15);
+
+    border: 2px solid #d1fdff;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}

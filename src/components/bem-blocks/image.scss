@@ -4,18 +4,18 @@
   max-width: 100%;
   width: 100%;
   &-bl {
-    border-radius: 10px 10px 10px 100px;
+    border-radius: 10px 10px 10px 150px;
   }
   &-br {
-    border-radius: 10px 10px 70px 10px;
+    border-radius: 10px 10px 155px 10px;
   }
 
   @media screen and (min-width: 768px) {
     &-bl {
-      border-radius: 10px 10px 10px 170px;
+      border-radius: 10px 10px 10px 220px;
     }
     &-br {
-      border-radius: 10px 10px 70px 10px;
+      border-radius: 10px 10px 155px 10px;
     }
   }
 

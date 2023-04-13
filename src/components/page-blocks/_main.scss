@@ -1,5 +1,6 @@
 .mainSection {
   padding: 30px 15px;
+  padding-top: 0;
   //height: 100vh;
   &__container {
     position: relative;
@@ -114,6 +115,7 @@
   }
 
   @media screen and (min-width: 1440px) {
+    position: relative;
     padding: 55px 15px;
     &__imgMobile {
       display: none;
@@ -123,6 +125,15 @@
     }
     &__img {
       display: block;
+    }
+    &__lineBlock {
+      position: absolute;
+      transform: rotate(90deg);
+      left: -15%;
+      /* max-width: 600px; */
+      bottom: 38%;
+      /* height: 109px; */
+      width: 600px;
     }
   }
 }
