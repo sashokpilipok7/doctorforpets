@@ -38,6 +38,9 @@
     position: absolute;
     right: 5px;
   }
+  .nav {
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     width: 100%;
   }
@@ -45,5 +48,39 @@
   @media screen and (min-width: 1440px) {
     width: 1280px;
     margin: 0 auto;
+    .dropdown {
+      display: none;
+    }
+    .nav {
+      display: block;
+    }
+    .navLink {
+      padding: 0 16px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+
+      text-transform: uppercase;
+      text-decoration: none;
+
+      color: #d1fdff;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &__input {
+      height: 50px;
+      width: 196px;
+      transition: 1s;
+    }
+    &__input:focus {
+      height: 50px;
+      width: 240px;
+      transition: 1s;
+    }
+    &__searchIcon {
+      padding: 10px;
+      right: 6px;
+    }
   }
 }
