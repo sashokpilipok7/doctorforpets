@@ -1,0 +1,28 @@
+.offertaSection {
+  padding-top: 35px;
+  padding-bottom: 60px;
+  &__title {
+    margin: 21px 0;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .text {
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  &__mobileBr {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  @media screen and (min-width: 1440px) {
+    &__mobileBr {
+      display: none;
+    }
+    padding-top: 50px;
+    padding-bottom: 110px;
+  }
+}
