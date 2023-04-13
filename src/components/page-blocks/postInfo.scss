@@ -13,6 +13,9 @@
   &__right {
     flex: 1;
   }
+  &__info {
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 40px;
     padding-bottom: 85px;
@@ -26,6 +29,13 @@
     }
     &__right {
       flex: 5;
+    }
+    &__info {
+      padding-bottom: 70px;
+      .button {
+        width: fit-content;
+        margin: 0 auto;
+      }
     }
   }
   @media screen and (min-width: 1440px) {
@@ -41,6 +51,9 @@
     }
     &__right {
       flex: 7;
+    }
+    &__info {
+      padding-bottom: 110px;
     }
   }
 }
