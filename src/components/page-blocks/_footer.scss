@@ -14,6 +14,63 @@
     width: 100%;
     padding: 5px;
     text-align: center;
+    line-height: 30px;
+    .text {
+      line-height: 30px;
+    }
+  }
+  &__link {
+    position: relative;
+    padding-left: 33px;
+    display: block;
+    line-height: 30px;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+  &__colOfferta {
+    display: flex;
+    justify-content: center;
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      /* or 18px */
+
+      text-decoration-line: underline;
+      text-transform: uppercase;
+
+      color: #ffffff;
+    }
+  }
+  &__colArrow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__devLink {
+    color: #d1fdff;
+    text-decoration: underline;
+  }
+  &__colRights-desctop {
+    display: none;
+  }
+  &__colRights-mobile {
+    display: block;
+  }
+  &__socLinks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  &__arrowTop {
+    width: 100%;
   }
   @media screen and (min-width: 768px) {
     padding: 35px 0;
@@ -21,7 +78,25 @@
       flex-direction: row;
     }
     &__col {
-      width: 25%;
+      width: 33%;
+    }
+    &__link {
+      max-width: initial;
+    }
+    &__colArrow {
+      flex-wrap: nowrap;
+    }
+    &__colRights-desctop {
+      display: block;
+    }
+    &__colRights-mobile {
+      display: none;
+    }
+    &__socLinks {
+      width: initial;
+    }
+    &__arrowTop {
+      width: initial;
     }
   }
   @media screen and (min-width: 1440px) {
@@ -30,7 +105,7 @@
       flex-wrap: nowrap;
     }
     &__col {
-      width: 16.666%;
+      width: 20%;
       text-align: left;
     }
   }
