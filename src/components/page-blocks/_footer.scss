@@ -79,9 +79,6 @@
     &__col {
       width: 33%;
     }
-    &__link {
-      max-width: initial;
-    }
     &__colArrow {
       flex-wrap: nowrap;
     }
@@ -103,6 +100,9 @@
       flex-direction: row;
       flex-wrap: nowrap;
       gap: 15px;
+    }
+    &__link {
+      max-width: initial;
     }
     &__col {
       width: 20%;
