@@ -8,7 +8,6 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 15px;
   }
   &__col {
     width: 100%;
@@ -76,6 +75,7 @@
     padding: 35px 0;
     &__row {
       flex-direction: row;
+      gap: 15px;
     }
     &__col {
       width: 33%;
