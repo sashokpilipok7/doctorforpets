@@ -1,8 +1,9 @@
 .card {
-  max-width: 140px;
+  // max-width: 140px;
+  margin: 0 5px;
   & .image {
-    max-width: 140px;
-    max-height: 140px;
+    // max-width: 140px;
+    // max-height: 140px;
     border-radius: 20px;
   }
   &__content {
@@ -23,10 +24,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 228px;
+    margin: 0 13px;
+    // max-width: 228px;
     & .image {
-      max-width: 228px;
-      max-height: 228px;
+      // max-width: 228px;
+      // max-height: 228px;
     }
 
     & .text-s,
