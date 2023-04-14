@@ -1,69 +1,73 @@
 .weHelp {
-	background-color: #212c53;
-	&__container {
-		padding: 30px 15px;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
+  background-color: #212c53;
+  &__container {
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-	& .title {
-		padding-left: 40px;
-		position: relative;
-		margin-bottom: 10px;
-	}
+  & .title {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 10px;
+  }
 
-	& .text {
-		max-width: 550px;
-	}
+  &__text {
+    padding-left: 10%;
+  }
 
-	&__cardsWrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 10px 16px;
-	}
+  & .text {
+    max-width: 550px;
+  }
 
-	&__card {
-		& .image {
-			width: 137px;
-			height: 114px;
-			object-fit: cover;
-			margin-bottom: 5px;
-		}
-		& .text {
-			text-transform: uppercase;
-			text-align: center;
-		}
-	}
+  &__cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+  }
 
-	@media screen and (min-width: 768px) {
-		& .title {
-			max-width: 420px;
-			&::before {
-				width: 30px;
-				height: 30px;
-			}
-		}
-		&__cardsWrapper {
-			gap: 10px 12px;
-		}
+  &__card {
+    & .image {
+      width: 137px;
+      height: 114px;
+      object-fit: cover;
+      margin-bottom: 5px;
+    }
+    & .text {
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
 
-		&__card .image {
-			min-width: 112px;
-			min-height: 113px;
-		}
-	}
+  @media screen and (min-width: 768px) {
+    & .title {
+      max-width: 420px;
+      &::before {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &__cardsWrapper {
+      gap: 10px 12px;
+    }
 
-	@media screen and (min-width: 1440px) {
-		&__cardsWrapper {
-			gap: 30px 20px;
-		}
-		&__card .image {
-			width: auto;
-			height: auto;
-			width: 400px;
-			height: 190px;
-		}
-	}
+    &__card .image {
+      min-width: 112px;
+      min-height: 113px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &__cardsWrapper {
+      gap: 30px 20px;
+    }
+    &__card .image {
+      width: auto;
+      height: auto;
+      width: 400px;
+      height: 190px;
+    }
+  }
 }
