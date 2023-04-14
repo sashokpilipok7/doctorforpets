@@ -26,11 +26,100 @@
   }
 
   &__card {
+    padding: 25px;
     background: #ffffff;
     border-radius: 10px;
-    height: 295px !important;
+    min-height: 295px !important;
   }
 
+  &__userRow {
+    display: flex;
+    flex-direction: revert;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__userIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: #212c53;
+    border-radius: 50%;
+
+    font-weight: 400;
+    font-size: 16.24px;
+    line-height: 130%;
+    /* or 21px */
+
+    color: #ffffff;
+  }
+
+  &__stars {
+    display: flex;
+    margin-bottom: 8px;
+    img {
+      margin-left: 5px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__userName {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 130%;
+    /* or 17px */
+
+    color: #000000;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    /* identical to box height, or 17px */
+
+    color: #686868;
+  }
+
+  &__feedbackText {
+    height: 250px;
+    margin-top: 17px;
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+
+    color: #03000b;
+  }
+
+  &__more {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+    color: #03000b;
+    text-decoration: none;
+  }
+
+  &__linkToMap {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    /* identical to box height, or 19px */
+
+    text-decoration-line: underline;
+
+    color: #4b4b4b;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 87px;
     padding-bottom: 50px;
@@ -44,6 +133,86 @@
     &__card {
       margin: 0 5px;
     }
+    &__userIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: #212c53;
+      border-radius: 50%;
+
+      font-weight: 400;
+      font-size: 16.24px;
+      line-height: 130%;
+      /* or 21px */
+
+      color: #ffffff;
+    }
+
+    &__stars {
+      display: flex;
+      margin-bottom: 8px;
+      img {
+        margin-left: 5px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__userName {
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 130%;
+      /* or 17px */
+
+      color: #000000;
+    }
+
+    &__date {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 130%;
+      /* identical to box height, or 17px */
+
+      color: #686868;
+    }
+
+    &__feedbackText {
+      margin-top: 20px;
+      margin-bottom: 33px;
+      font-size: 13px;
+      line-height: 130%;
+      /* or 21px */
+
+      color: #03000b;
+    }
+
+    &__more {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 130%;
+      /* identical to box height, or 21px */
+
+      color: #03000b;
+      text-decoration: none;
+    }
+
+    &__linkToMap {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 135%;
+      /* identical to box height, or 19px */
+
+      text-decoration-line: underline;
+
+      color: #4b4b4b;
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -56,6 +225,84 @@
     }
     &__card {
       margin: 0 10px;
+    }
+    &__userIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: #212c53;
+      border-radius: 50%;
+
+      font-weight: 400;
+      font-size: 16.24px;
+      line-height: 130%;
+      /* or 21px */
+
+      color: #ffffff;
+    }
+
+    &__stars {
+      display: flex;
+      margin-bottom: 8px;
+      img {
+        margin-left: 5px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__userName {
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 130%;
+      /* or 17px */
+
+      color: #000000;
+    }
+
+    &__date {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 130%;
+      /* identical to box height, or 17px */
+
+      color: #686868;
+    }
+
+    &__feedbackText {
+      font-size: 16px;
+      line-height: 130%;
+      /* or 21px */
+
+      color: #03000b;
+    }
+
+    &__more {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 130%;
+      /* identical to box height, or 21px */
+
+      color: #03000b;
+      text-decoration: none;
+    }
+
+    &__linkToMap {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 135%;
+      /* identical to box height, or 19px */
+
+      text-decoration-line: underline;
+
+      color: #4b4b4b;
     }
   }
 }
