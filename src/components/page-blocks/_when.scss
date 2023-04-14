@@ -31,6 +31,9 @@
     gap: 7px;
   }
   &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 15px;
     background: rgba(89, 98, 129, 0.5);
