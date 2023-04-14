@@ -75,7 +75,6 @@
     padding: 35px 0;
     &__row {
       flex-direction: row;
-      gap: 15px;
     }
     &__col {
       width: 33%;
@@ -103,6 +102,7 @@
     &__row {
       flex-direction: row;
       flex-wrap: nowrap;
+      gap: 15px;
     }
     &__col {
       width: 20%;
