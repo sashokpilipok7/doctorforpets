@@ -1,5 +1,80 @@
 .slider {
   border-bottom: 1px solid #d1fdff;
+  padding-bottom: 40px;
+  .slick-arrow {
+    position: absolute;
+    bottom: -18px;
+    height: 35px;
+    width: 35px;
+    background: none;
+    border-radius: 50%;
+    border: 2px solid #d1fdff;
+    color: transparent;
+    background: #212c53;
+    z-index: 9;
+    cursor: pointer;
+  }
+  .slick-prev {
+    left: 50%;
+    transform: translate(-150px, 0px);
+    &::before {
+      content: "<";
+      color: #d1fdff;
+      font-size: 20px;
+      margin-left: 2px;
+      padding-top: 3px;
+    }
+  }
+  .slick-next {
+    left: 50%;
+    transform: translate(115px, 0px);
+    &::before {
+      content: ">";
+      color: #d1fdff;
+      font-size: 20px;
+      margin-left: 4px;
+      padding-top: 3px;
+    }
+  }
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    margin: 0 auto;
+    list-style: none;
+    background: #212c53;
+    position: relative;
+    top: 48px;
+    text-align: center;
+    padding-left: 0;
+    li {
+      width: 10px;
+      height: 10px;
+      margin: 0 7px;
+      cursor: pointer;
+
+      /* голубой светлый */
+      background-color: transparent;
+      border: 2px solid #d1fdff;
+      border-radius: 50%;
+      button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: transparent;
+      }
+      &.slick-active {
+        width: 15px;
+        height: 15px;
+
+        background: rgba(100, 193, 198, 0.3);
+        /* голубой светлый */
+
+        border: 2px solid #d1fdff;
+      }
+    }
+  }
   &__item {
     // width: 100%;
     display: flex;
@@ -18,17 +93,22 @@
     background: #596281;
     border-radius: 15px;
   }
-  &__arrows {
-    position: relative;
-    top: 7px;
-    text-align: center;
-    background: blue;
-    width: 180px;
-    margin: 0 auto;
-    background: #212c53;
+
+  &-light {
+    .slick-arrow {
+      background: #2b3763;
+    }
+    .slick-dots {
+      background: #2b3763;
+    }
   }
 
   @media screen and (min-width: 768px) {
+    padding-bottom: 47px;
+    .slick-dots {
+      width: 360px;
+      top: 56px;
+    }
     &__item {
       // width: 33.333%;
       padding: 5px 5px;
@@ -36,6 +116,11 @@
   }
 
   @media screen and (min-width: 1440px) {
+    padding-bottom: 67px;
+    .slick-dots {
+      width: 360px;
+      top: 76px;
+    }
     &__item {
       // width: 25%;
       padding: 15px 10px;
