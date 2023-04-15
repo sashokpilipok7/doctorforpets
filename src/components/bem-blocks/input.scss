@@ -11,6 +11,9 @@
   margin-bottom: 10px;
   color: #c6d4d3;
 
+  &:hover {
+    background: rgba(209, 253, 255, 0.1);
+  }
   &:focus {
     outline: none;
   }

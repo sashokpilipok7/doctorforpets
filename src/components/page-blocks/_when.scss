@@ -39,12 +39,17 @@
     background: rgba(89, 98, 129, 0.5);
     border: 1px solid #f8f8f8;
     border-radius: 10px;
+    cursor: pointer;
 
     font-size: 13px;
     line-height: 130%;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    &:hover {
+      background: rgba(89, 98, 129, 0.9);
+      font-family: "gothampro_bold";
+    }
   }
   &__allButton {
     display: block;
@@ -56,6 +61,15 @@
   }
   .fullWidth {
     margin-top: 40px;
+  }
+  &__mobile {
+    display: block;
+  }
+  &__tablet {
+    display: none;
+  }
+  &__desctop {
+    display: none;
   }
   @media screen and (min-width: 768px) {
     padding: 35px 0;
@@ -73,6 +87,15 @@
       display: none;
     }
     &__linkButton {
+      display: none;
+    }
+    &__mobile {
+      display: none;
+    }
+    &__tablet {
+      display: block;
+    }
+    &__desctop {
       display: none;
     }
   }
@@ -97,6 +120,15 @@
       display: none;
     }
     &__linkButton {
+      display: block;
+    }
+    &__mobile {
+      display: none;
+    }
+    &__tablet {
+      display: none;
+    }
+    &__desctop {
       display: block;
     }
   }

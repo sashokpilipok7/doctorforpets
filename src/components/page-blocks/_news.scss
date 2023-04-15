@@ -9,10 +9,27 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
-
+  &__hoverButton {
+    display: none;
+    font-size: 80%;
+    padding: 22px 5px;
+  }
   .slider__item {
     width: 50%;
     padding: 0;
+  }
+
+  .card {
+    &:hover {
+      .card__content {
+        .text-s {
+          display: none;
+        }
+      }
+      .newsSection__hoverButton {
+        display: block;
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -37,6 +54,11 @@
     }
     .slider__item {
       width: 20%;
+    }
+    &__hoverButton {
+      display: none;
+      font-size: 99%;
+      padding: 22px 5px;
     }
   }
 }

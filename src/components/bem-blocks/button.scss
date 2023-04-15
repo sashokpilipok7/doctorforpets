@@ -20,6 +20,14 @@
   text-transform: uppercase;
 
   color: #d1fdff;
+  transition: 1s;
+  cursor: pointer;
+  &:hover {
+    transition: 1s;
+    background: rgba(209, 253, 255, 0.9);
+    border: 2px solid #d1fdff;
+    color: #596281 !important;
+  }
 
   &__category {
     font-size: 14px;

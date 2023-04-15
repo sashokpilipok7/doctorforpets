@@ -58,6 +58,7 @@
       left: 50%;
       margin-bottom: -15px;
       background: #2b3763;
+      cursor: pointer;
     }
   }
   &__imgMobile {
@@ -145,6 +146,14 @@
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     &__left {
       width: 100%;
+    }
+    .title-xl {
+      font-size: 31px;
+    }
+    .mainLineForText {
+      display: inline-block;
+      margin-left: 5px;
+      width: 100px;
     }
   }
 
