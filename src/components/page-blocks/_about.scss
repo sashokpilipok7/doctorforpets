@@ -8,6 +8,16 @@
     margin: 0;
     display: inline-block;
   }
+
+  &__left {
+    position: relative;
+    padding-left: 20px;
+  }
+  &__line {
+    height: 50%;
+    position: absolute;
+    left: 0;
+  }
   &__container {
     padding: 45px 15px;
     display: flex;
@@ -70,6 +80,19 @@
       color: #d1fdff;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    &__hr {
+      width: 205px;
+    }
+    &__left {
+      position: relative;
+      padding-left: 85px;
+    }
+    &__line {
+      height: 100%;
+    }
+  }
   @media screen and (min-width: 1440px) {
     &__container {
       display: flex;
@@ -81,6 +104,7 @@
     &__left {
       max-width: 615px;
       margin-bottom: 0px;
+      padding-left: 95px;
     }
     &__ourMission {
       .text-xs {
@@ -152,9 +176,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    &__hr {
-      width: 205px;
-    }
     display: grid;
     grid-template-columns: 576px 140px;
     grid-template-rows: repeat(3, auto);
