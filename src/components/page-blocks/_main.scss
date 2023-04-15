@@ -117,6 +117,13 @@
   @media screen and (min-width: 1440px) {
     position: relative;
     padding: 55px 15px;
+    &__left {
+      .textGroup {
+        .text {
+          width: 29%;
+        }
+      }
+    }
     &__imgMobile {
       display: none;
     }
