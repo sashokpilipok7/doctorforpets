@@ -1,0 +1,28 @@
+.breadcrums {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 25px;
+  &__link {
+    font-size: 16px;
+    line-height: 130%;
+    color: #fff;
+  }
+  &__hr {
+    width: 15px;
+    height: 1px;
+    background: #64c1c6;
+    margin: 0 10px;
+    border: none;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+    color: #c6d4d3 !important;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
+}
