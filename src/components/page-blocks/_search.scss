@@ -9,14 +9,69 @@
   }
   &__col {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #212c53;
     border-radius: 15px;
     padding: 10px;
+    flex-wrap: wrap;
   }
   &__textBlock {
     display: flex;
     align-items: center;
     gap: 11px;
+    width: 100%;
+    flex: initial;
+    img {
+      max-width: 80px;
+    }
+  }
+  &__dateBlock {
+    flex: 1;
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  &__buttonBlock {
+    flex: 2;
+    .button {
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 5px;
+      padding: 10px 14px;
+      gap: 10px;
+      height: 33px;
+      font-size: 14px;
+      line-height: 13px;
+    }
+  }
+  &__title {
+    font-size: 13px;
+    line-height: 135%;
+    /* or 18px */
+
+    /* Белый */
+
+    color: #f8f8f8;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    /* or 16px */
+
+    color: #ffffff;
+  }
+  &__date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 135%;
+    /* identical to box height, or 18px */
+
+    /* Голубой */
+
+    color: #64c1c6;
   }
   @media screen and (min-width: 768px) {
     padding-top: 36px;
@@ -26,11 +81,49 @@
     }
     &__col {
       padding: 10px;
+      flex-wrap: nowrap;
     }
     &__textBlock {
       display: flex;
+      flex: 6;
       align-items: center;
       gap: 25px;
+      img {
+        max-width: 140px;
+      }
+    }
+    &__dateBlock {
+      flex: 1;
+      align-self: flex-start;
+      margin-top: 40px;
+      padding-left: 0;
+    }
+    &__buttonBlock {
+      flex: 2;
+      .button {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 22px 28px;
+        gap: 10px;
+        height: 56px;
+        font-size: 16px;
+        line-height: 15px;
+      }
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 135%;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+    }
+    &__date {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 135%;
     }
   }
   @media screen and (min-width: 1440px) {
@@ -42,6 +135,13 @@
     }
     &__col {
       padding: 10px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+    }
+    &__date {
     }
   }
 }
