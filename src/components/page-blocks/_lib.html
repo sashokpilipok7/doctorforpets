@@ -1,8 +1,37 @@
+<script>
+  function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = "library__wrapper tabcontent";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(
+        " button__category-active",
+        ""
+      );
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "flex";
+    evt.currentTarget.className += " button__category-active";
+  }
+</script>
 <section class="library">
   <div class="container library__container">
     <h2 class="title title-m title-withDot">Библиотека</h2>
     <div class="library__buttons">
-      <button class="button__category">
+      <button
+        class="button__category tablinks"
+        onclick="openTab(event, 'video')"
+      >
         <svg
           width="19"
           height="12"
@@ -17,7 +46,10 @@
         </svg>
         Видео
       </button>
-      <button class="button__category button__category-active">
+      <button
+        class="button__category button__category-active tablinks"
+        onclick="openTab(event, 'post')"
+      >
         <svg
           width="12"
           height="15"
@@ -33,7 +65,18 @@
         Статьи
       </button>
     </div>
-    <div class="library__wrapper">
+    <div class="library__wrapper tabcontent" id="video">
+      <div class="card">
+        <img src="../../img/cat-card.jpg" alt="" class="card__image image" />
+        <div class="card__content">
+          <p class="text-s">Как часто нужно стричь когти своему коту?</p>
+          <p class="text-s date">16.06.23</p>
+          <a href="#" class="button newsSection__hoverButton">Смотреть видео</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="library__wrapper tabcontent tabcontentpost" id="post">
       <div class="card">
         <img src="../../img/cat-card.jpg" alt="" class="card__image image" />
         <div class="card__content">

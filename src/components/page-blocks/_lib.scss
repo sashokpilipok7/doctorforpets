@@ -12,6 +12,7 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
+    cursor: pointer;
   }
 
   & .title {
@@ -22,6 +23,7 @@
   }
 
   &__wrapper {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -47,6 +49,18 @@
         }
       }
     }
+  }
+
+  .tabcontent {
+    display: none;
+  }
+
+  .tabcontentpost {
+    display: flex;
+  }
+
+  .button__category {
+    cursor: pointer;
   }
 
   @media screen and (min-width: 768px) {
