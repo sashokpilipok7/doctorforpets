@@ -12,6 +12,37 @@
     position: relative;
     padding-bottom: 30px;
   }
+  .slider__item {
+    position: relative;
+  }
+  .slider__item:hover {
+    .teamSection__hoverItem {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      position: absolute;
+      padding: 10px;
+      left: 5px;
+      top: 7px;
+      width: calc(100% - 10px);
+      height: calc(100% - 15px);
+      background: #596281;
+      border-radius: 15px;
+      z-index: 9;
+      .slider__textBlock {
+        flex: 1;
+      }
+      .teamSection__contentItem {
+        flex: 3;
+        overflow-x: scroll;
+      }
+      .button {
+        margin-top: 30px;
+      }
+    }
+  }
   &__itemTitle {
     margin-bottom: 10px;
   }
@@ -26,6 +57,19 @@
     color: #d1fdff;
     font-size: 14px;
     line-height: 19px;
+  }
+  &__contentItem {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    /* or 16px */
+
+    /* Белый */
+
+    color: #f8f8f8;
+  }
+  &__hoverItem {
+    display: none;
   }
   @media screen and (min-width: 768px) {
     padding: 55px 0;
@@ -47,6 +91,16 @@
     }
     &__itemTitle {
       font-size: 16px;
+    }
+    &__contentItem {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 135%;
+      /* or 19px */
+
+      /* Белый */
+
+      color: #f8f8f8;
     }
   }
 }
