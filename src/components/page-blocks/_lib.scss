@@ -35,6 +35,18 @@
       margin: 0;
       padding: 0 5px;
     }
+    .card {
+      &:hover {
+        .card__content {
+          .text-s {
+            display: none;
+          }
+        }
+        .newsSection__hoverButton {
+          display: block;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {
