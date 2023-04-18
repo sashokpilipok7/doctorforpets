@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+	"lang":"ru",
+	"title":"Ветеринарная клиника VoLYAVET",
+	"description":"Когда здоровье вашего питомца важнее всего остального",
+	"keywords":"",
+	"favicon":"img/favicons/favicon",
+	})
+
+<body>
+	<main class="main">
+		<div class="container">
+			@@include('components/page-blocks/_header.html')
+			<div class="breadcrums">
+				<a href="/" class="link breadcrums__link">Главная</a>
+				<hr class="breadcrums__hr">
+				<p class="breadcrums__text">Поиск</p>
+			</div>
+			</div>
+            @@include('components/page-blocks/_search.html')
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
